@@ -1,0 +1,36 @@
+#texter
+{
+	font-family: Consolas,monaco,monospace; 
+	background-color: #202020;
+	color: #ADD8E6;
+}
+
+#console
+{
+	font-family: Consolas,monaco,monospace; 
+	background-color: #202020;
+	color: #ADD8E6;
+}
+
+.orange
+{
+	color: orange;
+	  /*background-color: yellow;*/
+}
+
+.red
+{
+	color: #FF5959;
+	  /*background-color: yellow;*/
+}
+
+.yellow
+{
+	color: #BFD800;
+	  /*background-color: yellow;*/
+}
+
+.pink
+{
+	color: #FF69B4;
+}

@@ -1,0 +1,9 @@
+//Your ship has collected 2 new parts
+CHANGE 1 IN pickup TO temppart	//Change the first object inside object "pickup" into name "temppart"
+
+
+
+
+
+SET status IN scanner TO true
+SET thruster TO 100

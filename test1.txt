@@ -1,0 +1,28 @@
+SET dirtarget TO direction + 90
+CHANGE unknown004 TO a4 IN thruster
+SET speed IN thruster TO 100
+SET speed IN a1 IN thruster TO 50
+SET speed IN a4 IN thruster TO 0
+LABEL loop
+IF direction ABOVE dirtarget STOP
+IF amount IN scanner ABOVE 0 JUMP warscript
+JUMP loop
+STOP
+SET speed IN thruster TO 70
+PRINT ALL IN thruster
+//speed
+//tilt
+//heat*
+PRINT ALL thruster
+//a1
+//a2
+//a3
+//a4
+COMPUTE pointdistance WITH x AND y AND x2 AND y2 INTO enemydistance
+COMPUTE customfunction WITH enemydistance AND speed INTO countdown
+FUNCTION customfunction
+RETURN ARG1 - ARG2
+STOP
+
+
+

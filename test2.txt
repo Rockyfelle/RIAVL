@@ -1,0 +1,12 @@
+LABEL enemy
+COMPUTE degreedifference WITH rotation AND enemyrotation INTO degdiff
+IF degdiff UNDER 11 JUMP attack
+SKIP
+LABEL attack
+SET target IN turret TO degdiff
+UNTIL angle IN turret EQUALS degdiff PRINT "Turning"
+SET shooting IN turret TO true
+STOP attack
+SET target IN pilot TO degdiff
+STOP enemy
+JUMP enemy
